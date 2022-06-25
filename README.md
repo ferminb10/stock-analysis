@@ -1,23 +1,8 @@
 # stock-analysis
-Performing analysis on green stock data to uncover trends
-
-
-
-Overview of Project: Explain the purpose of this analysis.
-The purpose and background are well defined (2 pt).
-
-Summary: In a summary statement, address the following questions.
-There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
-One of the disadvantages of refractoring code for the particular application of analyzing thousands of stocks is that the program may take a long time to execute. You can easily make this to your advantage if you're well educated in economics and you have tailored the code to a limited stock pool.
-
-There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script (3 pt).
-
-What are the advantages or disadvantages of refactoring code?
-How do these pros and cons apply to refactoring the original VBA script?
-
+Performing analysis on green stock data to uncover trends.
 
 ## Overview of Project
-This weeks challenge helps us build upon our skills learned in the VBA module. The client wants to do a do research for 
+This weeks challenge helps us build upon our skills learned in the VBA module. The client wants to do a do research for his parents. He'd like to possibly expand the dataset to the entire stock market over the last few years.
 ## Results
 The analysis had two part task. First, a solution code was refractored to loop through all stock data one time in order to collect the same information that you did in this module. Then, it was determined if that our refactored code successfully performed better than the original script, the results shown below.
 
@@ -31,7 +16,8 @@ The analysis had two part task. First, a solution code was refractored to loop t
 ### Original 2017 & 2018
 ![Original](https://user-images.githubusercontent.com/107658895/175761234-a23bb236-69ac-4d8e-83fe-fe8925c1b97e.png)
 # Code:
-Sub AllStocksAnalysisRefactored()
+
+    Sub AllStocksAnalysisRefactored()
     Dim startTime As Single
     Dim endTime  As Single
 
@@ -82,7 +68,7 @@ Sub AllStocksAnalysisRefactored()
     ''2a) Create a for loop to initialize the tickerVolumes to zero.
     For i = 0 To 11
     TickerVolumes(i) = 0
-Next i
+    Next i
 
     ''2b) Loop over all the rows in the spreadsheet.
     For i = 2 To RowCount
@@ -154,7 +140,7 @@ Next i
     endTime = Timer
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
-End Sub
+    End Sub
 
 ## Summary
 Based on the results of this test the refractered code was a more efficient version of the original script. This is one of the benefits of refractoring code. You can take code and try to optimize. The limitations of this dataset is that it only provides a small dataset. This script doesn't do a good job of testing its limits. I was curious to know how long it would take to run the S&P 500. One of the disadvantages of refractoring code for the particular application of analyzing thousands of stocks is that the program may take a long time to execute. You can easily make this to your advantage if you're well educated in economics and have it tailored to a specific set that you want. The refractored script proved to be a much more efficient than the original based on the executed times. The faster it can be the more applicible it can be for a wider range of datasets.
