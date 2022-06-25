@@ -25,12 +25,10 @@ This weeks challenge helps us build upon our skills learned in the VBA module. T
 The analysis had two part task. First, a solution code was refractored to loop through all stock data one time in order to collect the same information that you did in this module. Then, it was determined if whether refactoring the code successfully made the VBA script run faster, the results shown below.
 
 ### 2017
-![VBA_Challenge_2017](https://user-images.githubusercontent.com/107658895/175760234-a2d674a0-997c-461e-9265-4acbc96ad7cb.png)
-
+![VBA_Challenge_2017](https://user-images.githubusercontent.com/107658895/175761138-60faaf6e-37bd-4d96-a29c-ecc37ee3e70f.png)
 ![VBA_Challenge_2017_timer](https://user-images.githubusercontent.com/107658895/175760314-8ddae46c-3025-489d-9b83-978c878992f3.png)
 ### 2018
 ![VBA_Challenge_2018](https://user-images.githubusercontent.com/107658895/175760753-bb322daa-9686-4cdf-9c32-312b4ffdefb8.png)
-
 ![VBA_Challenge_2018_timer](https://user-images.githubusercontent.com/107658895/175760756-14761ff9-d98c-4fbd-bc73-746dc903f7f1.png)
 
 The most difficult thing for these tasks was making sure that you were filtering for what was being asked. For me, I had trouble, initially, filtering the correct data from the required 'subcategories' when doing the countif function. I overcame this following the tutorials in the module 1 to get the correct Outcomes based on Goal graphs.
